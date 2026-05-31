@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  hrsolution:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - /tmp:/tmp
